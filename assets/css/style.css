@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --dark: #333;
   --light: #fff;
@@ -74,6 +76,7 @@ body {
 .header h2 {
   text-align: center;
   margin: 0px 0 12px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header .profile {
@@ -95,6 +98,7 @@ body {
   padding: 9px 5px;
   border-radius: 6px;
   margin: 0 0 14px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .blue {
@@ -123,6 +127,7 @@ body {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -144,8 +149,54 @@ body {
   margin-left: 7px;
   direction: ltr;
   font-size: 13px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .notification-bar.is-chargin-true .battery rect:last-child {
   fill: #deaa00;
+}
+
+/* Battery icon */
+.battery-1 {
+  position: relative;
+  width: 24px;
+  height: 12px;
+  top: 4px;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  border: 1px solid;
+  border-radius: 3px;
+  margin-left: -3px;
+  padding: 2px;
+  right: 7px;
+  border-color: #a6a6a6;
+  color: #a6a6a6;
+}
+
+.battery-1:before,
+.battery-1:after {
+  content: '';
+  display: block;
+  height: 6px;
+  background: currentColor;
+  position: absolute;
+  top: 1px;
+}
+
+.battery-1:before {
+  width: 1px;
+  right: -3px;
+  top: 3.5px;
+  border-radius: 39px;
+  height: 4px;
+}
+
+.battery-1:after {
+  height: 83%;
+  left: 0;
+  width: var(--percent-battery);
+  border-radius: 2px;
+  margin: 1px;
+  max-width: 90%;
+  top: 0;
 }
