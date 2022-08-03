@@ -6,9 +6,12 @@ navigator.getBattery().then(function (battery) {
   batteryIsCharging = battery.charging;
 
   function updateLevelInfo() {
-    document.querySelectorAll('.battery rect')[1].style.width = `${
-      18 * battery.level
-    }`;
+    // document.querySelectorAll('.battery-1')[1].style.width = `${
+    //   18 * battery.level
+    // }`;
+    document
+      .querySelectorAll('.battery-1')[0]
+      .setAttribute('style', `--percent-battery:${battery.level * 100}%`);
   }
 
   function chargingChangeInfo(batteryIsCharging) {
