@@ -6,12 +6,11 @@ navigator.getBattery().then(function (battery) {
   batteryIsCharging = battery.charging;
 
   function updateLevelInfo() {
-    console.log(`Battery level: ${battery.level * 100}%`);
-    let levelBattery = battery.level.toFixed(0);
     document.querySelectorAll('.battery rect')[1].style.width = `${
-      18 * levelBattery
-    }%`;
+      18 * battery.level
+    }`;
   }
+
   function chargingChangeInfo(batteryIsCharging) {
     document
       .querySelectorAll('.notification-bar')[0]
