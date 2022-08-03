@@ -6,48 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aspalani | Amir Spalani</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-  <h1>HELLO <span>WORLD</span></h1>
-  <style>
-    @keyframes color-change {
-      0% {
-        color: red;
-      }
+  <div class="phone">
+    <div class="notification-bar">
+      <div class="time">18:27</div>
+      <svg class="battery" viewBox="0 0 25 12">
+        <rect opacity="0.35" x="0.5" y="0.833374" width="21" height="10.3333" rx="2.16667" fill="none"
+          stroke="currentColor"></rect>
+        <path opacity="0.4" d="M23 4V8C23.8047 7.66122 24.328 6.87313 24.328 6C24.328 5.12687 23.8047 4.33878 23 4"
+          fill="currentColor"></path>
+        <rect x="2" y="2.33337" width="18" height="7.33333" rx="1.33333" fill="currentColor"></rect>
+      </svg>
+    </div>
 
-      20% {
-        color: orange;
-      }
+    <div class="content-wrapper">
+      <div class="header"><img src="/assets/images/13034792.png" class="profile">
 
-      40% {
-        color: yellow;
-      }
+        <h1>Amir Spalani</h1>
+        <h2>Freelance Developer</h2>
+      </div>
+      <div class="links">
+        <p class="title">Contact</p>
 
-      60% {
-        color: pink;
-      }
-
-      80% {
-        color: purple;
-      }
-
-      100% {
-        color: blue;
-      }
-    }
-
-    body {
-      margin: 0;
-      text-align: center;
-      font-family: sans-serif;
-    }
-
-    span {
-      animation: color-change 4s infinite;
-      transition: 0.3s all;
-    }
-  </style>
+        <a href="tel:+989150099912" class="button blue">Phone</a>
+        <a href="mailto:hi@aspalani.ir" class="button red">Mail</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
