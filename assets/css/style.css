@@ -39,7 +39,7 @@ body {
 
 .phone:before {
   content: '';
-  width: 173px;
+  width: 146px;
   height: 20px;
   background: var(--dark);
   border-bottom-right-radius: 20px;
@@ -142,4 +142,10 @@ body {
 .time {
   margin-right: auto;
   margin-left: 7px;
+  direction: ltr;
+  font-size: 13px;
+}
+
+.notification-bar.is-chargin-true .battery rect:last-child {
+  fill: #deaa00;
 }
